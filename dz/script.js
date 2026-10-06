@@ -1,6 +1,7 @@
 let savedLogin = "";
 let savedPassword = "";
 let hasUser = false;
+let choice;
  
 function register() {
   let login = prompt("Логін:");
@@ -30,10 +31,10 @@ function signIn() {
 		}
 	}
 	alert("спроби капут, заблоковано");
+	choice=0; //якщо заблокований то хай виходить, в менб повертати не логічно
 }
  
 function menu() {
-	let choice;
     choice = +prompt("Меню\n1 - регестрація\n2 - ввійти\n0 - вийти");
     if (choice == 1) {
         register();
@@ -43,12 +44,15 @@ function menu() {
     }
     else if (choice == 0 || choice === null) {
         alert("пака");
-        choice = "0";
     }
     else {
         alert("шось не то, заново");
     }
-    while (choice != "0");
 }
- 
-menu();
+
+while (true) {
+	menu();
+	if (choice==0) {
+		break
+	}
+}
