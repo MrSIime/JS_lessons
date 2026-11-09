@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background: #eef2f7;
+    color: #201f1f;
+}
+
+.course-card{
+    width: min(440px, 90vh);
+    padding: 30px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(220, 21, 21, 0.65);
+}
+
+.tag{
+    font-weight: bold;
+    color: #f43030;
+}
+
+label{
+    display: flex;
+    margin: 15px 0;
+}
+
+input, select, button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input, select{
+    border: 1px solid #f43030;
+}
+
+button{
+    margin: 20px 0;
+    border: none;
+    background: #f18d8d;
+    color: #fff;
+    cursor: pointer;
+}
+
+.secondary{
+    background: #e2e8f0;
+    color: #243041;
+}
+
+.hidden{
+    display: none;
+}
+
+.success{
+    font-weight: bold;
+    color: #e42a2a;
+}
+
+.dark{
+    background: #1e293b;
+    color: #eaeaea;
+}
+
+.dark, .success{
+    background: #475569;
+    color: #ffffff;
+}
+
+#welcome, .cost{
+    margin-top: 10px;
+}
