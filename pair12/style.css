@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #e3e0e0;
+    color: #353535
+}
+.app{
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #fbfbfb;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.form-row{
+    display: flex;
+    gap: 10px;
+}
+input{
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #4a4a4a;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: orange;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #4a4a4a;
+}
+.task-text{
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+.task.done .task-text{
+    text-decoration: line-through;
+    color: #66e657;
+}
+.edit-btn{
+    background: #b17d1c;
+}
+.delete-btn{
+    background: #e74c3c;
+}
